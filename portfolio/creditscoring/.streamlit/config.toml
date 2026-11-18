@@ -1,0 +1,12 @@
+# Powder Blue Minimalism — native Streamlit theme.
+# Fine-grained component styling lives in app/design.py.
+[theme]
+base = "light"
+primaryColor = "#8FB4DC"
+backgroundColor = "#F7F9FC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#26364A"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
