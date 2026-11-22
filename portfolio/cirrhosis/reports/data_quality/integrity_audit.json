@@ -1,0 +1,23 @@
+{
+  "train_rows": 15000,
+  "test_rows": 10000,
+  "duplicate_rows": 0,
+  "id_overlap": 0,
+  "invalid_label_rows": [
+    13789
+  ],
+  "age_below_18": 12,
+  "age_above_100": 2,
+  "n_days_median_by_status": {
+    "C": 2170.0,
+    "CL": 1447.0,
+    "D": 1067.0,
+    "Y": 4127.0
+  },
+  "class_counts": {
+    "C": 10053,
+    "D": 4565,
+    "CL": 381,
+    "Y": 1
+  }
+}

@@ -1,0 +1,6 @@
+check,before,after
+total records,15000.0,14999.0
+missing values,62861.0,62861.0
+invalid labels,1.0,0.0
+out of range ages,14.0,14.0
+retained percent,100.0,99.9933

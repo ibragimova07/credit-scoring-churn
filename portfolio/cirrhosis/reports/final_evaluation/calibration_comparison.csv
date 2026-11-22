@@ -1,0 +1,7 @@
+model,method,val_log_loss
+LightGBM,uncalibrated,0.3723173137540401
+XGBoost,uncalibrated,0.37307886717089317
+LightGBM,isotonic,0.37831742695295073
+LightGBM,sigmoid,0.37947947961163564
+XGBoost,isotonic,0.38323371574996556
+XGBoost,sigmoid,0.3951446585616224

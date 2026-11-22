@@ -1,0 +1,116 @@
+{
+  "target": "Status",
+  "classes": [
+    "C",
+    "CL",
+    "D"
+  ],
+  "probability_columns": [
+    "Status_C",
+    "Status_CL",
+    "Status_D"
+  ],
+  "include_n_days": true,
+  "n_labelled_rows": 14999,
+  "n_features_raw": 18,
+  "selected_model": "LightGBM",
+  "calibration_method": "uncalibrated",
+  "cv_log_loss": 0.3875924088175838,
+  "validation_log_loss": 0.3723173137540401,
+  "validation_accuracy": 0.8506666666666667,
+  "validation_f1_macro": 0.6571151531310894,
+  "class_distribution": {
+    "C": 10053,
+    "D": 4565,
+    "CL": 381
+  },
+  "ndays_ablation": [
+    {
+      "model": "XGBoost",
+      "include_n_days": true,
+      "log_loss": 0.3820048536159839,
+      "accuracy": 0.8543211934327861,
+      "f1_macro": 0.614032925906442,
+      "fit_seconds": 7.93,
+      "variant": "with_N_Days"
+    },
+    {
+      "model": "LightGBM",
+      "include_n_days": true,
+      "log_loss": 0.3875924088175838,
+      "accuracy": 0.8542378531544296,
+      "f1_macro": 0.6258391289578289,
+      "fit_seconds": 12.44,
+      "variant": "with_N_Days"
+    },
+    {
+      "model": "CatBoost",
+      "include_n_days": true,
+      "log_loss": 0.3963844767599733,
+      "accuracy": 0.8496541378448204,
+      "f1_macro": 0.5816760453455778,
+      "fit_seconds": 6.77,
+      "variant": "with_N_Days"
+    },
+    {
+      "model": "XGBoost",
+      "include_n_days": false,
+      "log_loss": 0.3982594077347661,
+      "accuracy": 0.847237269772481,
+      "f1_macro": 0.6083820057409624,
+      "fit_seconds": 5.44,
+      "variant": "without_N_Days"
+    },
+    {
+      "model": "LightGBM",
+      "include_n_days": false,
+      "log_loss": 0.4046692180913665,
+      "accuracy": 0.8449870822568547,
+      "f1_macro": 0.6098146421301274,
+      "fit_seconds": 5.35,
+      "variant": "without_N_Days"
+    },
+    {
+      "model": "CatBoost",
+      "include_n_days": false,
+      "log_loss": 0.41066278517442956,
+      "accuracy": 0.8426535544628719,
+      "f1_macro": 0.5700312446792674,
+      "fit_seconds": 6.62,
+      "variant": "without_N_Days"
+    }
+  ],
+  "calibration_comparison": [
+    {
+      "model": "LightGBM",
+      "method": "uncalibrated",
+      "val_log_loss": 0.3723173137540401
+    },
+    {
+      "model": "XGBoost",
+      "method": "uncalibrated",
+      "val_log_loss": 0.37307886717089317
+    },
+    {
+      "model": "LightGBM",
+      "method": "isotonic",
+      "val_log_loss": 0.37831742695295073
+    },
+    {
+      "model": "LightGBM",
+      "method": "sigmoid",
+      "val_log_loss": 0.37947947961163564
+    },
+    {
+      "model": "XGBoost",
+      "method": "isotonic",
+      "val_log_loss": 0.38323371574996556
+    },
+    {
+      "model": "XGBoost",
+      "method": "sigmoid",
+      "val_log_loss": 0.3951446585616224
+    }
+  ],
+  "seed": 42
+}
